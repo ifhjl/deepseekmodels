@@ -5,25 +5,15 @@ import chardet
 from pathlib import Path
 
 
-BOT_TOKEN = "7804006652:AAEqqgm9SBB8YPQEV97iIsjb108N4D6FZQY"
-BOT_USERNAME = "@deepseekmodels_bot"
+BOT_TOKEN = ""
+BOT_USERNAME = ""
 PROXY_URL = "http://127.0.0.1:1093"
 
 client = AsyncOpenAI(base_url="https://ark.cn-beijing.volces.com/api/v3", api_key="afaa0760-916a-474b-a2e1-d2f4771ed8b4")
 
 speech_file_path = Path(__file__).parent / "speech.mp3"
 
-
-
-V3 = "ep-20250217092822-zdjbc"
-R1 = "ep-20250217093306-sbhrx"
-R1_32B = "ep-20250217093306-sbhrx"
-R1_7B = "ep-20250219212147-m8tpn"
-db_15_Pro = "ep-20250219214616-dmlvj"
-db_15_lite = "ep-20250219214749-25cqt"
-db_15_Pro_256K = "ep-20250219214837-4dxg7"
-db_pro_256K = "ep-20250219214934-khkts"
-db_lite_128K = "ep-20250219215035-65m6f"
+#list tokens down here
 
 # 处理命令
 def handle_context(contexts):
